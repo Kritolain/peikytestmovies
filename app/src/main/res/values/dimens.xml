@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--card Movies-->
+    <dimen name="text_date_card">13dp</dimen>
+    <dimen name="text_title_card">16dp</dimen>
+    <dimen name="text_qualification">14dp</dimen>
+
+    <!--DetailMovies-->
+    <dimen name="title">20dp</dimen>
+    <dimen name="overView">14dp</dimen>
+    <dimen name="date">13dp</dimen>
+    <dimen name="fields">13dp</dimen>
+</resources>

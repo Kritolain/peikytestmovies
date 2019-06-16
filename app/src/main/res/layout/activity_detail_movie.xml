@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/black">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                <ImageView
+                        android:id="@+id/movieDetailImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_buttons"/>
+                <WebView
+                        android:id="@+id/videoWebView"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="200dp">
+                </WebView>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            <RelativeLayout
+                    android:id="@+id/relRootProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp">
+
+                <ImageView
+                        android:id="@+id/smallImage"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:background="@color/gray_buttons"/>
+
+                <LinearLayout
+                        android:id="@+id/linear"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/smallImage"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:id="@+id/languageText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="en"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/fields"
+                            android:textStyle="bold"/>
+
+                    <TextView
+                            android:id="@+id/dateDetailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="en"
+                            android:textColor="@color/regular_gray"
+                            android:textSize="@dimen/fields"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/startImage"
+                            app:layout_constraintStart_toEndOf="@+id/languageText"/>
+
+
+                    <TextView
+                            android:id="@+id/voteCountText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="en"
+                            android:layout_toRightOf="@+id/dateDetailText"
+                            android:textColor="@color/regular_gray"
+                            android:textSize="@dimen/fields"
+                            android:textStyle="bold"
+                            android:layout_marginStart="0dp"/>
+
+
+                    <TextView
+                            android:id="@+id/homePageText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="en"
+                            android:layout_toRightOf="@+id/voteAverageText"
+                            android:textColor="@color/regular_gray"
+                            android:textSize="@dimen/fields"
+                            android:textStyle="bold"
+                            android:layout_marginStart="0dp"/>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <ImageView
+                                android:id="@+id/startImage"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/icon_start"/>
+
+                        <TextView
+                                android:id="@+id/voteAverageText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="en"
+                                android:layout_toRightOf="@+id/voteCountText"
+                                android:textColor="@color/regular_gray"
+                                android:textSize="@dimen/fields"
+                                android:textStyle="bold"
+                                android:layout_marginStart="05dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/overView"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+            android:id="@+id/relHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:onClick="goBack"
+                android:background="@drawable/btn_back"/>
+
+        <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="14dp"
+                android:src="@drawable/icon_share"
+                android:background="?android:attr/selectableItemBackground" />
+
+    </RelativeLayout>
+</RelativeLayout>

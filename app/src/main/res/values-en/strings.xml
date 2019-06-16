@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PeikyTest</string>
+
+    <!-- Movies-->
+    <string name="hint_header">Search</string>
+    <!--Movies -->
+    <string name="text_date">Date</string>
+    <string name="text_title_movie">Film title</string>
+    <string name="text_description_movie">Description movie</string>
+    <string name="text_qualification">Qualification</string>
+
+    <!-- DetailMovie -->
+    <string name="text_title">Title</string>
+    <string name="text_overview">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</string>
+    <string name="text_date_detail">Date</string>
+    <string name="text_vote_average">7.2</string>
+    <string name="text_vote">1450</string>
+    <string name="send_to">PeikyTestMovies</string>
+
+</resources>
