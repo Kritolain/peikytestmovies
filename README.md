@@ -12,15 +12,15 @@ Se utilizo el patron MVVM para el desarrollo de esta capa.
 
 ** Capa de datos **
 
-Se utilizo retrofit para la gestion de llamados al Api
+Se utilizo retrofit para la gestión de llamados al Api
 
 ### ¿En qué consiste el principio de responsabilidad única? Cuál es su propósito?
 
-* El proposito de responsabilidad único consiste en que cada clase debe ser usada unica y exclusivamente para una funcionalidad y el proposito de esta es hacer codigo mas limpio, de facil actualizacion y detencion de errores, mejor manejable y testeable.
+* El propósito de responsabilidad único consiste en que cada clase debe ser usada unica y exclusivamente para una funcionalidad y el propósito de esta es hacer código más limpio, de fácil actualización y detección de errores, mejor manejable y testeable.
 
 ### ¿Qué características tiene, según su opinión, un “buen” código o código limpio?
 
-* Un buen codigo es aquel que puede ser usado y entendido por algun desarrolldor ajeno al iniciador del proyeto, llevando a cabo el principio de arquitetura con capas de aplicación, ademas de esto debe tener algun patron ya definido con anterioridad (MVC,MVP,MVVM).
+* Un buen código es aquel que puede ser usado y entendido por algún desarrollador ajeno al iniciador del proyecto, llevando a cabo el principio de arquitectura con capas de aplicación, ademas de esto debe tener algún patrón ya definido con anterioridad (MVC,MVP,MVVM).
 
 ## Versioning
 
@@ -28,7 +28,7 @@ Se utilizo retrofit para la gestion de llamados al Api
 
 ## Authors
 
-* ** Carolain Lenes Beltran
+* Carolain Lenes Beltran
 
 ## License
 
